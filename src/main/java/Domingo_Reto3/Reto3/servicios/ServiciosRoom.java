@@ -48,9 +48,7 @@ public class ServiciosRoom {
                 if(room.getStars()!=null){
                     e.get().setStars(room.getStars());
                 }
-                if(room.getCategory_id()!=null){
-                    e.get().setCategory_id(room.getCategory_id());
-                }
+                
                 if(room.getDescription()!=null){
                     e.get().setDescription(room.getDescription());
                 }
