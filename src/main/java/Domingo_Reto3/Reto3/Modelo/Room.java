@@ -26,13 +26,12 @@ public class Room implements Serializable {
     private Integer id;
     private String name;
     private Integer stars;
-    private Integer category_id;
     private String hotel;
     private String description;
     
     @ManyToOne
     @JoinColumn(name = "categoriaId")
-    @JsonIgnoreProperties("room")
+    @JsonIgnoreProperties("rooms")
     private Category category;
 
      @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "room")
@@ -65,14 +64,6 @@ public class Room implements Serializable {
 
     public void setStars(Integer stars) {
         this.stars = stars;
-    }
-
-    public Integer getCategory_id() {
-        return category_id;
-    }
-
-    public void setCategory_id(Integer category_id) {
-        this.category_id = category_id;
     }
 
    
