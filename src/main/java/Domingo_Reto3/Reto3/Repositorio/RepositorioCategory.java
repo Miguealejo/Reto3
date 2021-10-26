@@ -23,11 +23,11 @@ public class RepositorioCategory {
         return crud.findById(id);
     }
 
-    public Category save(Category Category){
-        return crud.save(Category);
+    public Category save(Category category){
+        return crud.save(category);
     }
-    public void delete(Category Category){
-       crud.delete(Category);
+    public void delete(Category category){
+       crud.delete(category);
     }
 
 }

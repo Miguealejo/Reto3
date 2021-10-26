@@ -26,7 +26,8 @@ public class Room implements Serializable {
     private Integer id;
     private String name;
     private Integer stars;
-    private Integer Category_id;
+    private Integer category_id;
+    private String hotel;
     private String description;
     
     @ManyToOne
@@ -67,12 +68,14 @@ public class Room implements Serializable {
     }
 
     public Integer getCategory_id() {
-        return Category_id;
+        return category_id;
     }
 
     public void setCategory_id(Integer category_id) {
-        this.Category_id = category_id;
+        this.category_id = category_id;
     }
+
+   
 
     public String getDescription() {
         return description;
@@ -85,6 +88,15 @@ public class Room implements Serializable {
     public Category getCategory() {
         return category;
     }
+
+    public String getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(String hotel) {
+        this.hotel = hotel;
+    }
+    
 
     public void setCategory(Category category) {
         this.category = category;

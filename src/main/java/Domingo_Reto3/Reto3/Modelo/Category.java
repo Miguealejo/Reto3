@@ -21,7 +21,7 @@ import javax.persistence.Table;
  * @author HP
  */
 @Entity
-@Table(name="category")
+@Table(name="Category")
 public class Category implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

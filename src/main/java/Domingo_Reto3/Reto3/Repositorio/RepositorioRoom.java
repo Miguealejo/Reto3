@@ -21,7 +21,7 @@ public class RepositorioRoom {
         return (List<Room>) crud.findAll();
     }
 
-    public Optional<Room> getBike(int id){
+    public Optional<Room> getRoom(int id){
         return crud.findById(id);
     }
 
@@ -30,10 +30,6 @@ public class RepositorioRoom {
     }
     public void delete(Room room){
         crud.delete(room);
-    }
-
-    public Optional<Room> getRoom(int roomId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
   
 
