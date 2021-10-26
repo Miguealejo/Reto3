@@ -31,7 +31,7 @@ public class Room implements Serializable {
     
     @ManyToOne
     @JoinColumn(name = "categoriaId")
-    @JsonIgnoreProperties("rooms")
+    @JsonIgnoreProperties("room")
     private Category category;
 
      @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "room")
