@@ -57,11 +57,11 @@ public class Category implements Serializable{
         this.description = description;
     }
 
-    public List<Room> getRoom() {
+    public List<Room> getRooms() {
         return rooms;
     }
 
-    public void setRoom(List<Room> rooms) {
+    public void setRooms(List<Room> rooms) {
         this.rooms = rooms;
     }
     
