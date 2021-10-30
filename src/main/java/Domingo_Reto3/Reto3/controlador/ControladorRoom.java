@@ -28,10 +28,10 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
 
 public class ControladorRoom {
-  @Autowired
+    @Autowired
     private ServiciosRoom servicio;
     @GetMapping("/all")
-    public List<Room> getBikes(){
+    public List<Room> getRoom(){
         return servicio.getAll();
     }
 
